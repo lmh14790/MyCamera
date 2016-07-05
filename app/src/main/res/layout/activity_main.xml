@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yztc.mycamera.MainActivity">
+   <SurfaceView
+       android:id="@+id/picture"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/takePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开相机"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:id="@+id/take"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:layout_above="@id/takePhoto"
+        />
+    <Button
+        android:id="@+id/flash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="闪光灯"
+        android:layout_above="@id/take"
+        />
+    <Button
+        android:id="@+id/foucs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="聚焦"
+        android:layout_above="@id/flash"
+        />
+</RelativeLayout>
